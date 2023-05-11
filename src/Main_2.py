@@ -3,9 +3,6 @@ import pandas as pd
 from Helper import table_1, table_3_dict, average, last_misery_agg, most_pleasure_agg, GRS_dataset, title_sim
 
 
-# Definir constantes para los nombres de las estrategias de agregación
-
-
 # Función para cargar los datos del archivo excel
 def load_data():
     # Cargar las dos hojas del archivo excel en dataframes de pandas
