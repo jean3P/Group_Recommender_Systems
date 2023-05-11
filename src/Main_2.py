@@ -157,7 +157,8 @@ def get_rating_multiplication_dataframes(selected_columns_Last_Misery, most_simi
         # Obtener el dataframe de películas similares para el título de la película
         similar_movies_df = most_similar_movies_dict.get(movie_title)
 
-        # Si se encuentra un dataframe de películas similares, multiplicar las calificaciones por la calificación de la película
+        # Si se encuentra un dataframe de películas similares, multiplicar las calificaciones
+        # por la calificación de la película
         if similar_movies_df is not None:
             similar_movies_df = similar_movies_df.copy()
             similar_movies_df['Ranked List Recommendation'] = similar_movies_df['Rating'] * movie_rating
